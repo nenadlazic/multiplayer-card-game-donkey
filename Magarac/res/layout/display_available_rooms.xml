@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/display_rooms1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@drawable/main_menu" >
+
+            <LinearLayout
+                android:id="@+id/available_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Game Rooms"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            
+            
+            
+            
+			<LinearLayout
+			    android:id="@+id/room1_info"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginTop="45dp"
+			    android:orientation="horizontal"
+			    android:paddingLeft="16dp"
+			    android:paddingRight="16dp" >
+
+			    <Button
+			        android:id="@+id/room1_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:text="room1 name"
+			        android:textAlignment="center"
+			        android:textSize="32sp" />
+
+			    
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/room2_info"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/room1_info"
+			    android:orientation="horizontal"
+			    android:paddingLeft="16dp"
+			    android:paddingRight="16dp" >
+
+			    <Button
+			        android:id="@+id/room2_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:text="room2 name"
+			        android:textAlignment="center"
+			        android:textSize="32sp" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/room3_info"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/room2_info"
+			    android:orientation="horizontal"
+			    android:paddingLeft="16dp"
+			    android:paddingRight="16dp" >
+
+			    <Button
+			        android:id="@+id/room3_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:text="room3 name"
+			        android:textAlignment="center"
+			        android:textSize="32sp" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/room4_info"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/room3_info"
+			    android:orientation="horizontal"
+			    android:paddingLeft="16dp"
+			    android:paddingRight="16dp" >
+
+			    <Button
+			        android:id="@+id/room4_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:text="room4 name"
+			        android:textAlignment="center"
+			        android:textSize="32sp" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/room5_info"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/room4_info"
+			    android:orientation="horizontal"
+			    android:paddingLeft="16dp"
+			    android:paddingRight="16dp" >
+
+			    <Button
+			        android:id="@+id/room5_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:text="room5 name"
+			        android:textAlignment="center"
+			        android:textSize="32sp" />
+			</LinearLayout>
+			
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>
