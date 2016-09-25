@@ -153,11 +153,11 @@ public class MainMenu extends Activity implements
 
 		    			String rezultat = "";
 		    			
-		    			while( keys.hasNext() ) {
+		    			while( keys.hasNext() && i<5) {
 
 		    				String key = (String)keys.next();
 		    				
-		    				if(key.equals("number_rooms")){
+		    				if(key.equals("number_of_rooms")){
 		    					//nothing
 		    				}else {
 		    					rezultat = "Room name:";
@@ -189,19 +189,19 @@ public class MainMenu extends Activity implements
 		    				// TODO Auto-generated method stub
 
 		    				setContentView(R.layout.dialog);
-//		    				enteredName = (Button)findViewById(R.id.dialogButtonOK);
-		    //
-//		    				enteredName.setOnClickListener(new OnClickListener() {
-//		    					
-//		    					@Override
-//		    					public void onClick(View v) {
-//		    						
-//		    						editTextEnteredName = (EditText)findViewById(R.id.enter_name1);
-//		    						Editable entName = editTextEnteredName.getText();
-//		    						
-//		    						setContentView(R.layout.game_room);
-//		    					}
-//		    				});
+		    				enteredName = (Button)findViewById(R.id.dialogButtonOK);
+		    
+		    				enteredName.setOnClickListener(new OnClickListener() {
+		    					
+		    					@Override
+		    					public void onClick(View v) {
+		    						
+		    						editTextEnteredName = (EditText)findViewById(R.id.enter_name1);
+		    						Editable entName = editTextEnteredName.getText();
+		    						
+		    						setContentView(R.layout.game_room);
+		    					}
+		    				});
 
 		    			}
 		    		});
@@ -397,7 +397,7 @@ public class MainMenu extends Activity implements
 
 		//hardcoded responceString
 		responseString = "{\"number_rooms\":5,\"RIM\":5,\"ATINA\":4,\"BEOGRAD\":3,\"VALjEVO\":4,\"BIJELjINA\":5}";
-		displayAvailableRooms(responseString);
+		displayAvailableRooms(data);
 
 	}
 
