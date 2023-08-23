@@ -1,2 +1,3 @@
 # multiplayer-card-game-donkey
-Repozitorijum sadrzi source code pisane za igricu magarac u okviru studentskog projekta za predmet Razvoj softvera 2
+
+The repository contains source code written for a card game as part of a student project for the "Software Development 2" course.
